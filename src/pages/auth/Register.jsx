@@ -1,5 +1,7 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form"
+import { registerApi } from '../../services/authApi';
 
 const Register = ({ setToggle }) => {
 
@@ -7,10 +9,16 @@ const Register = ({ setToggle }) => {
 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    const submit = (data) => {
-        alert("registered succesfully")
-        console.log(data)
-        reset();
+    const submit = async(data) => {
+        try {
+            const response = await registerApi(data)
+            alert(response.data.message)
+            console.log(response.data)
+            reset();
+        } catch (error) {
+            alert(error.response?.data?.message || "something went wrong")
+            console.log("error in response api" , error)
+        }
     }
 
 
