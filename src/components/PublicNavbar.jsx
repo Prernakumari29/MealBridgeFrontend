@@ -1,14 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
 import {NavLink} from "react-router"
+import logo from "../assets/mealBridge_logo.png"
 
 const PublicNavbar = () => {
     const[activeSection , setActiveSection] = useState("home")
   return (
-<div className='flex items-center justify-between h-18 px-8 bg-white shadow-2xl'>
+<div className='flex items-center justify-between h-20 px-10 bg-white  shadow-[0_8px_30px_rgba(0,0,0,0.08)] mb-2'>
 
         {/* -------------------------------------logo-------------------------------------------------------- */}
-      <div>logo</div>
+      <img src={logo} className='h-12' alt="MealBridgeLogo" />
 
       {/* --------------------------------------------middle section ------------------------------------------- */}
      <div>
@@ -76,7 +77,12 @@ const PublicNavbar = () => {
 </div>
 
 {/* ------------------------------------------------------login----------------------------------------------- */}
-      <div>login</div>
+      <NavLink
+  to="/auth"
+  className="px-5 py-2.5 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg"
+>
+  Join MealBridge
+</NavLink>
     </div>
   )
 }
