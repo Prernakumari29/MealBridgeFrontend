@@ -5,9 +5,11 @@ import Register from './Register'
 const Auth = () => {
     const[toggle , setToggle] = useState(true)
   return (
-    <div className='min-h-screen w-full bg-pink-50 flex items-center justify-center'>
+    <div className='min-h-screen w-full bg-pink-50 flex flex-col items-center justify-center'>
+
+    
       {
-        toggle ? <Login setToggle={setToggle} /> : <Register setToggle={setToggle} />
+        toggle ? <Login setToggle={setToggle} />:<Register setToggle={setToggle} />
       }
     </div>
   )

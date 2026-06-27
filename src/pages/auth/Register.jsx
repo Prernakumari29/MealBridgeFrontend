@@ -8,6 +8,7 @@ const Register = ({ setToggle }) => {
     const [showpassword, setShowpassword] = useState(false)
 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    
 
     const submit = async(data) => {
         try {
@@ -15,6 +16,8 @@ const Register = ({ setToggle }) => {
             alert(response.data.message)
             console.log(response.data)
             reset();
+            setToggle(true);
+            
         } catch (error) {
             alert(error.response?.data?.message || "something went wrong")
             console.log("error in response api" , error)

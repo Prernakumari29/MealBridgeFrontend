@@ -3,11 +3,14 @@ import { useForm } from 'react-hook-form'
 import { loginApi } from '../../services/authApi';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../features/authSlice';
+import { useNavigate } from 'react-router';
+
 
 const Login = ({ setToggle }) => {
   const [showpassword, setShowpassword] = useState(false)
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const dispatch = useDispatch()
+  const navigate = useNavigate();
 
   const submit = async(data) =>{
     try {
@@ -19,6 +22,16 @@ const Login = ({ setToggle }) => {
       console.log(response.data)
       alert(response.data.message)
       reset();
+
+      if(user.role == "donor"){
+         navigate("/Donate-food")
+      }
+      else if(user.role == "recipient"){
+        navigate("/Find-food")
+      }else{
+        navigate("/")
+      }
+
     } catch (error) {
       alert(error.response?.data?.message || "something went Wrong")
       console.log("error in login api" , error)

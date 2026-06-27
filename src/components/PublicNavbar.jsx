@@ -13,7 +13,7 @@ const PublicNavbar = () => {
 
       {/* --------------------------------------------middle section ------------------------------------------- */}
      <div>
-  <nav className='flex items-center gap-8 font-medium text-gray-700'>
+  <nav className='flex items-center gap-8 font-bold text-gray-700 '>
 
     {/* ------------------Home    */}
     <a
