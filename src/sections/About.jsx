@@ -30,19 +30,19 @@ const About = () => {
                   <div className='flex gap-7 text-center'>
 
                     <div className='flex flex-col items-center gap-2 border-r border-gray-300 pr-8 self-stretch ' >
-                      <i class="ri-bowl-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
+                      <i className="ri-bowl-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
                       <h3 className='font-semibold text-green-800'>Reduce Waste</h3>
                       <p className='text-gray-700 text-sm'>We ensure surplus <br /> food reaches those <br />who need it most.</p>
                     </div>
                     
                     <div className='flex flex-col items-center gap-2 border-r border-gray-300 pr-8 self-stretch'>
-                      <i class="ri-group-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
+                      <i className="ri-group-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
                       <h3 className='font-semibold text-green-800'>Build Community</h3>
                       <p className='text-gray-700 text-sm '>We Bring People <br />together through <br />compassion and care.</p>
                     </div>
 
                     <div className='flex flex-col gap-2 items-center'>
-                      <i class="ri-global-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
+                      <i className="ri-global-line flex items-center justify-center w-12 h-12 rounded-full bg-[#D3E3C9] text-green-800 text-2xl shadow-lg shadow-green-50  duration-300"></i>
                       <h3 className='font-semibold text-green-800'>Create Impact</h3>
                       <p className='text-gray-700 text-sm '>Small actions today <br />lead to better , <br />hunger-free tomorrow.</p>
                     </div>

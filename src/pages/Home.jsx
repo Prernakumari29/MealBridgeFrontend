@@ -3,6 +3,7 @@ import PublicNavbar from '../components/PublicNavbar'
 import Hero from '../sections/Hero'
 import About from '../sections/About'
 import Work from '../sections/Work'
+import Impact from '../sections/Impact'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <Hero />
       <About />
       <Work />
-      <div id='impact' className='min-h-screen w-full bg-green-300'>impact page</div>
+      <Impact />
       <div id='contact' className='min-h-screen w-full bg-orange-500'>contact page</div>
     </div>
   )

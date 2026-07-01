@@ -25,7 +25,7 @@ const Hero = () => {
                     </button>
 
                 </div>
-                <div className='text-green-800 font-medium'><i class="ri-shield-check-fill"></i> Safe, Simple, Transparent.</div>
+                <div className='text-green-800 font-medium'><i className="ri-shield-check-fill"></i> Safe, Simple, Transparent.</div>
                 
             </div>
             <div>
